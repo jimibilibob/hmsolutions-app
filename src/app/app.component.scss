@@ -1,0 +1,45 @@
+.flex-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+  }
+  :host::ng-deep {
+    .p-card {
+      width: 350px;
+      .p-card-header {
+        padding: 22px 0 18px 0;
+        font-size: 28px;
+        text-align: center;
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--surface-d) !important;
+        .title {
+          padding: 0 10px 0 10px;
+        }
+        img {
+          width: 150px;
+        }
+      }
+      .p-card-body {
+        padding: 15px;
+        .p-card-title {
+          text-align: center;
+          font-size: 21px;
+          font-weight: 300;
+          margin-bottom: 15px;
+        }
+        .p-card-content {
+          p-password {
+            flex: 1 1 auto;
+          }
+          .p-button {
+            margin-top: 10px;
+          }
+          .p-fluid .p-inputtext {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }

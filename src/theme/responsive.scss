@@ -1,0 +1,28 @@
+@media screen and (max-width: 960px) {
+    app-main .layout-root {
+      app-side-menu .side-menu {
+        left: -250px;
+      }
+      app-header .p-menubar {
+        left: 0;
+      }
+      .layout-main {
+        margin-left: 0px;
+      }
+      &.mobile-active {
+        app-side-menu .side-menu {
+          left: 0;
+        }
+        .layout-mask {
+          display: block;
+          background: rgba(0, 0, 0, 0.32);
+          position: fixed;
+          top: 0;
+          left: 0;
+          z-index: 998;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
